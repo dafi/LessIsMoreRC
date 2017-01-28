@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:text="@string/pause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        app:srcCompat="@drawable/ic_pause"
+        android:tint="@color/media_button"
+        android:id="@+id/cmd_pause"
+        />
+
+    <TextView
+        android:id="@+id/ip_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:text="@string/rewind"
+        android:id="@+id/cmd_rewind"
+        app:srcCompat="@drawable/ic_rewind"
+        android:layout_width="80dp"
+        android:layout_gravity="bottom|start"
+        android:tint="@color/media_button"
+        android:layout_height="80dp"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:contentDescription="@string/forward"
+        android:id="@+id/cmd_forward"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_forward"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:tint="@color/media_button"/>
+
+</android.support.wearable.view.BoxInsetLayout>
